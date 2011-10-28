@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>tamino@cdauth.eu</email>
+		<name>Tamino Dauth</name>
+	</maintainer>
+	<longdescription lang="en">
+		Provides C++ API for using Blizzard Entertainment's MPQ format.
+	</longdescription>
+	<use>
+		<flag name="encryption" lang="en">Adds tomcrypt encryption support.</flag>
+	</use>
+</pkgmetadata>

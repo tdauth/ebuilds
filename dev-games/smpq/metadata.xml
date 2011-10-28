@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>tamino@cdauth.eu</email>
+		<name>Tamino Dauth</name>
+	</maintainer>
+	<longdescription lang="en">
+		A simple efficient tool for command line and KDE (KIO slave) based on <pkg>dev-games/StormLib</pkg> to work with Blizzard Entertainment's MPQ format.
+	</longdescription>
+	<use>
+		<flag name="cmd" lang="en">Adds command line tool support.</flag>
+		<flag name="kde" lang="en">Adds KIO slave support.</flag>
+	</use>
+</pkgmetadata>

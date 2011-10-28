@@ -1,0 +1,6 @@
+* StormLib-8.01
+      2011-10-24; Tamino Dauth <tamino@cdauth.eu> +StormLib-8.01.ebuild:
+      Fixed custom working directory.
+
+      2011-10-12; Tamino Dauth <tamino@cdauth.eu> +StormLib-8.01.ebuild:
+      Initial release.
