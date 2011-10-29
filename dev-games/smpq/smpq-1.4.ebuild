@@ -18,9 +18,6 @@ IUSE="+cmd +kde"
 DEPEND="${RDEPEND}"
 RDEPEND="
 dev-games/StormLib
-cmd? (
-kde-base/kdelibs:4
-)
 kde? (
 kde-base/kdelibs:4
 )
