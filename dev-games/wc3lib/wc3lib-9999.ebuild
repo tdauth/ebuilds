@@ -52,10 +52,6 @@ app-doc/doxygen
 "
 MERGE_TYPE="source"
 
-src_prepare() {
-        git_src_prepare
-}
-
 src_configure() {
 	local libdir="$(get_libdir)"
 	local mycmakeargs=(

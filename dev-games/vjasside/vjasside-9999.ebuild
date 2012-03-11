@@ -25,10 +25,6 @@ MERGE_TYPE="source"
 DOCSDIR="${S}"
 DOCS="ChangeLog README COPYING TODO"
 
-src_prepare() {
-        git_src_prepare
-}
-
 src_configure() {
 	eqmake4
 }
