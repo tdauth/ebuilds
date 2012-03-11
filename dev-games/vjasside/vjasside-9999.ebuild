@@ -4,7 +4,7 @@
 
 EAPI="4"
 
-inherit cmake-utils git
+inherit qt4-r2 git
 
 DESCRIPTION="Doxygen-like tool for JASS and vJass"
 HOMEPAGE="http://wc3lib.org"
@@ -12,30 +12,23 @@ LICENSE="GPL-2"
 RESTRICT="nomirror"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
-IUSE="gui"
+IUSE="debug"
 
 EGIT_REPO_URI="git://gitorious.org/wc3lib/vjassdoc.git"
 EGIT_BRANCH="master"
 
 DEPEND="${RDEPEND}"
-RDEPEND="dev-libs/boost
-gui? (
-kde-base/kdelibs
-)
+RDEPEND="x11-libs/qt-gui:4
 "
 MERGE_TYPE="source"
+
+DOCSDIR="${S}"
+DOCS="ChangeLog README COPYING TODO"
 
 src_prepare() {
         git_src_prepare
 }
 
 src_configure() {
-	local libdir="$(get_libdir)"
-	local mycmakeargs=(
-		-DLIB_SUFFIX=${libdir#lib}
-		-DMANUAL_REVISION=${VERSIO_PRAESENS}
-		$(cmake-utils_use_want gui GUI)
-	)
-
-	cmake-utils_src_configure
+	eqmake4
 }
