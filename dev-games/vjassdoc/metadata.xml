@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>tamino@cdauth.eu</email>
+		<name>Tamino Dauth</name>
+	</maintainer>
+	<longdescription lang="en">
+		Doxygen-like tool for JASS and vJass.
+	</longdescription>
+	<use>
+		<flag name="gui" lang="en">Adds KDE SC based GUI.</flag>
+	</use>
+</pkgmetadata>
