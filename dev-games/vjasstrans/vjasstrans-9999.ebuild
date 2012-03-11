@@ -4,7 +4,7 @@
 
 EAPI="4"
 
-inherit cmake-utils git
+inherit cmake-utils git-2
 
 DESCRIPTION="gettext-like tool for JASS and vJass"
 HOMEPAGE="http://wc3lib.org"

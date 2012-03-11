@@ -4,7 +4,7 @@
 
 EAPI="4"
 
-inherit qt4-r2 git
+inherit qt4-r2 git-2
 
 DESCRIPTION="Doxygen-like tool for JASS and vJass"
 HOMEPAGE="http://wc3lib.org"
@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
 IUSE="debug"
 
-EGIT_REPO_URI="git://gitorious.org/wc3lib/vjassdoc.git"
+EGIT_REPO_URI="git://gitorious.org/wc3lib/vjasside.git"
 EGIT_BRANCH="master"
 
 DEPEND="${RDEPEND}"
