@@ -6,7 +6,7 @@ EAPI="4"
 
 inherit qt4-r2 git-2
 
-DESCRIPTION="Doxygen-like tool for JASS and vJass"
+DESCRIPTION="Qt based IDE for JASS and vJass"
 HOMEPAGE="http://wc3lib.org"
 LICENSE="GPL-2"
 RESTRICT="nomirror"

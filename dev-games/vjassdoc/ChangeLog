@@ -1,3 +1,6 @@
 * vjassdoc-9999
+      2012-03-20; Tamino Dauth <tamino@cdauth.eu> +vjassdoc-9999, +metadata.xml:
+      Added support for useflags sqlite and doc.
+
       2012-03-11; Tamino Dauth <tamino@cdauth.eu> +vjassdoc-9999:
       Initial stuff.

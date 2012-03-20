@@ -12,7 +12,7 @@ LICENSE="GPL-2"
 RESTRICT="nomirror"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
-IUSE="gui"
+IUSE="gui sqlite doc"
 
 EGIT_REPO_URI="git://gitorious.org/wc3lib/vjassdoc.git"
 EGIT_BRANCH="master"
@@ -21,6 +21,9 @@ DEPEND="${RDEPEND}"
 RDEPEND="dev-libs/boost
 gui? (
 kde-base/kdelibs
+)
+sqlite? (
+dev-db/sqlite:3
 )
 "
 MERGE_TYPE="source"
@@ -31,6 +34,8 @@ src_configure() {
 		-DLIB_SUFFIX=${libdir#lib}
 		-DMANUAL_REVISION=${VERSIO_PRAESENS}
 		$(cmake-utils_use_want gui GUI)
+		$(cmake-utils_use_want sqlite SQLITE)
+		$(cmake-utils_use_want doc DOC)
 	)
 
 	cmake-utils_src_configure

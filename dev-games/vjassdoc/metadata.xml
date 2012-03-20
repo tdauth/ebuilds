@@ -11,5 +11,7 @@
 	</longdescription>
 	<use>
 		<flag name="gui" lang="en">Adds KDE SC based GUI.</flag>
+		<flag name="sqlite" lang="en">Adds support for reading and writing SQLite databases.</flag>
+		<flag name="doc" lang="en">Installs API documentation as well.</flag>
 	</use>
 </pkgmetadata>
