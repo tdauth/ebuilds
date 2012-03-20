@@ -12,7 +12,7 @@ LICENSE="GPL-2"
 RESTRICT="nomirror"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
-IUSE="gui sqlite doc"
+IUSE="gui -sqlite doc"
 
 EGIT_REPO_URI="git://gitorious.org/wc3lib/vjassdoc.git"
 EGIT_BRANCH="master"
