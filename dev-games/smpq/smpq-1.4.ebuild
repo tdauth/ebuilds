@@ -30,7 +30,7 @@ src_configure() {
 		-DLIB_SUFFIX=${libdir#lib}
 		-DMANUAL_REVISION=${VERSIO_PRAESENS}
 		$(cmake-utils_use_want cmd WITH_CMD)
-		$(cmake-utils_use_want cmd WITH_KDE)
+		$(cmake-utils_use_want kde WITH_KDE)
 	)
 
 	cmake-utils_src_configure

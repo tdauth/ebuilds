@@ -1,3 +1,6 @@
 * smpq-1.4
+      2012-06-07; Tamino Dauth <tamino@cdauth.eu> +smpq-1.4.ebuild:
+      Fixed kde useflag in CMake.
+
       2011-10-24; Tamino Dauth <tamino@cdauth.eu> +smpq-1.4.ebuild:
       Initial release.
