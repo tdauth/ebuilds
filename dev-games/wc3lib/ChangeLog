@@ -1,4 +1,10 @@
 * wc3lib-0.9999
+      2012-08-28; Tamino Dauth <tamino@cdauth.eu> +metadata.xml:
+      Added useflag description for useflag "encryption".
+
+      2012-08-28; Tamino Dauth <tamino@cdauth.eu> +wc3lib-9999.ebuild:
+      Fixed jpeg dependency and added encryption useflag.
+
       2012-03-12; Tamino Dauth <tamino@cdauth.eu> +wc3lib-9999.ebuild:
       Initial stuff.
 
