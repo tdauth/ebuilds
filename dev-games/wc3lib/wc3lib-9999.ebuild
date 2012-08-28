@@ -68,7 +68,6 @@ src_configure() {
 		$(cmake-utils_use_want plugins PLUGINS)
 		$(cmake-utils_use_want encryption ENCRYPTION)
 		$(cmake-utils_use_want debug DEBUG)
-		$(cmake-utils_use_want doc DOXYGEN)
 		$(cmake-utils_use_want doc DOC)
 	)
 
