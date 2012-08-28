@@ -1,0 +1,9 @@
+* stormlib-8.01
+      2012-08-28; Tamino Dauth <tamino@cdauth.eu> +stormlib-8.01.ebuild:
+      Renamed ebuild.
+
+      2011-10-24; Tamino Dauth <tamino@cdauth.eu> +stormlib-8.01.ebuild:
+      Fixed custom working directory.
+
+      2011-10-12; Tamino Dauth <tamino@cdauth.eu> +stormlib-8.01.ebuild:
+      Initial release.
