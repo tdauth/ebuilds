@@ -31,7 +31,7 @@ sys-libs/zlib
 dev-libs/crypto++
 )
 blp? (
-media-libs/jpeg:0
+virtual/jpeg
 )
 editor? (
 dev-games/wc3lib[blp]
