@@ -18,7 +18,7 @@ EGIT_REPO_URI="git://gitorious.org/wc3lib/vjasside.git"
 EGIT_BRANCH="master"
 
 DEPEND="${RDEPEND}"
-RDEPEND="x11-libs/qt-gui:4
+RDEPEND="dev-qt/qt-gui:4
 "
 MERGE_TYPE="source"
 
