@@ -19,7 +19,7 @@ EGIT_BRANCH="master"
 
 DEPEND="${RDEPEND}"
 RDEPEND="
-dev-libs/boost:1.46
+>=dev-libs/boost-1.46
 sys-devel/gettext
 map? (
 dev-games/wc3lib[mpq]
