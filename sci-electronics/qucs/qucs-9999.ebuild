@@ -6,17 +6,15 @@ EAPI="4"
 
 inherit cmake-utils subversion
 
-#https://qucs.svn.sourceforge.net/svnroot/qucs/branches/qucs_0_1_0/qucs
-
 DESCRIPTION="Quite Universal Circuit Simulator"
 HOMEPAGE="http://qucs.sourceforge.net"
 LICENSE="GPL-2"
 RESTRICT="nomirror"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
-IUSE="+app +blp +map +mdlx +mpq +w3g +editor +plugins +encryption debug doc"
+IUSE=""
 
-ESVN_REPO_URI="https://qucs.svn.sourceforge.net/svnroot/qucs/branches/qucs_0_1_0/qucs"
+ESVN_REPO_URI="https://qucs.svn.sourceforge.net/svnroot/qucs/branches/qucs-qt4/qucs"
 ESVN_PROJECT="qucs"
 
 DEPEND="${RDEPEND}"
