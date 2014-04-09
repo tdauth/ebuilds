@@ -13,7 +13,7 @@ LICENSE="GPLv2"
 RESTRICT="nomirror"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
-IUSE="+app +blp +map +mdlx +mpq +w3g +editor +plugins debug doc"
+IUSE="+app +blp +jass jass_llvm +map +mdlx +mpq +w3g +editor +plugins debug doc"
 
 DEPEND="${RDEPEND}"
 RDEPEND="
@@ -30,6 +30,10 @@ dev-libs/crypto++
 )
 blp? (
 media-libs/jpeg:0
+)
+jass_llvm? (
+dev-games/wc3lib[jass]
+sys-devel/llvm
 )
 editor? (
 dev-games/wc3lib[blp]
@@ -57,6 +61,9 @@ src_configure() {
 		-DMANUAL_REVISION=${VERSIO_PRAESENS}
 		$(cmake-utils_use_want app APP)
 		$(cmake-utils_use_want blp BLP)
+		$(cmake-utils_use_want jass JASS)
+		$(cmake-utils_use_want jass_llvm JASS_LLVM)
+		$(cmake-utils_use_want map MAP)
 		$(cmake-utils_use_want mdlx MDLX)
 		$(cmake-utils_use_want mpq MPQ)
 		$(cmake-utils_use_want w3g W3G)
