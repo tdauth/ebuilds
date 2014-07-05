@@ -26,5 +26,5 @@ DOCSDIR="${S}"
 DOCS="ChangeLog README COPYING TODO"
 
 src_configure() {
-	eqmake4
+	eqmake4 "${S}"/vjasside.pro
 }

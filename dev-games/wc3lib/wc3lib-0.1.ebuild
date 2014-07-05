@@ -59,19 +59,19 @@ src_configure() {
 	local mycmakeargs=(
 		-DLIB_SUFFIX=${libdir#lib}
 		-DMANUAL_REVISION=${VERSIO_PRAESENS}
-		$(cmake-utils_use_want app APP)
-		$(cmake-utils_use_want blp BLP)
-		$(cmake-utils_use_want jass JASS)
-		$(cmake-utils_use_want jass_llvm JASS_LLVM)
-		$(cmake-utils_use_want map MAP)
-		$(cmake-utils_use_want mdlx MDLX)
-		$(cmake-utils_use_want mpq MPQ)
-		$(cmake-utils_use_want w3g W3G)
-		$(cmake-utils_use_want editor EDITOR)
-		$(cmake-utils_use_want plugins PLUGINS)
-		$(cmake-utils_use_want debug DEBUG)
-		$(cmake-utils_use_want doc DOXYGEN)
-		$(cmake-utils_use_want doc DOC)
+		$(cmake-utils_use app APP)
+		$(cmake-utils_use blp BLP)
+		$(cmake-utils_use jass JASS)
+		$(cmake-utils_use jass_llvm JASS_LLVM)
+		$(cmake-utils_use map MAP)
+		$(cmake-utils_use mdlx MDLX)
+		$(cmake-utils_use mpq MPQ)
+		$(cmake-utils_use w3g W3G)
+		$(cmake-utils_use editor EDITOR)
+		$(cmake-utils_use plugins PLUGINS)
+		$(cmake-utils_use debug DEBUG)
+		$(cmake-utils_use doc DOXYGEN)
+		$(cmake-utils_use doc DOC)
 	)
 
 	cmake-utils_src_configure
