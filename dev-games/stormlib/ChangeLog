@@ -1,4 +1,7 @@
 * stormlib-8.01
+      2014-08-09; Tamino Dauth <tamino@cdauth.eu> +stormlib-9999.ebuild:
+      New git based ebuild.
+      
       2012-08-28; Tamino Dauth <tamino@cdauth.eu> +stormlib-8.01.ebuild:
       Renamed ebuild.
 
