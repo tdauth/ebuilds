@@ -8,7 +8,6 @@ inherit cmake-utils git-2
 
 DESCRIPTION="MPQ library"
 HOMEPAGE="http://www.zezula.net/en/mpq/stormlib.html"
-SRC_URI="http://www.zezula.net/download/stormlib.zip"
 LICENSE="custom"
 RESTRICT="nomirror"
 SLOT="0"
