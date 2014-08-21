@@ -12,7 +12,7 @@ LICENSE="Boost-1.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
 IUSE=""
-SRC_URI="http://bitbucket.org/verateam/vera/downloads/vera++-1.2.1.tar.gz"
+SRC_URI="http://bitbucket.org/verateam/vera/downloads/${P}.tar.gz"
 
 DEPEND="${RDEPEND}"
 RDEPEND="
@@ -21,7 +21,3 @@ dev-libs/boost
 app-text/pandoc
 "
 MERGE_TYPE="source"
-
-src_configure() {
-	cmake-utils_src_configure
-}
