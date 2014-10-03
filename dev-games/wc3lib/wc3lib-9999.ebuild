@@ -12,7 +12,7 @@ LICENSE="GPL-2"
 RESTRICT="nomirror"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
-IUSE="+app +blp +jass jass_llvm +map +mdlx +mpq +w3g +editor +plugins encryption debug doc"
+IUSE="+app +blp +jass jass_llvm +map +mdlx +mpq +w3g +editor +plugins debug doc"
 
 EGIT_REPO_URI="git://gitorious.org/wc3lib/wc3lib.git"
 EGIT_BRANCH="master"
@@ -42,15 +42,12 @@ dev-games/wc3lib[map]
 dev-games/wc3lib[mdlx]
 dev-games/wc3lib[mpq]
 >=kde-base/kdelibs-4.6
->=dev-games/ogre-1.7.3
+>=dev-games/ogre-1.9.0
 )
 plugins? (
 dev-games/wc3lib[blp]
 dev-games/wc3lib[mpq]
 >=kde-base/kdelibs-4.6
-)
-encryption? (
-dev-libs/crypto++
 )
 doc? (
 app-doc/doxygen
@@ -73,7 +70,6 @@ src_configure() {
 		$(cmake-utils_use w3g W3G)
 		$(cmake-utils_use editor EDITOR)
 		$(cmake-utils_use plugins PLUGINS)
-		$(cmake-utils_use encryption ENCRYPTION)
 		$(cmake-utils_use debug DEBUG)
 		$(cmake-utils_use doc DOC)
 	)

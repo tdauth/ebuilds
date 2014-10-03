@@ -25,7 +25,6 @@
 		<flag name="editor" lang="de">Erzeugt zusätzlich eine GUI-Welt-Editor-Emulation.</flag>
 		<flag name="plugins" lang="en">Installs all provided Qt, KDE and OGRE plugins (can be used without useflag "editor").</flag>
 		<flag name="plugins" lang="de">Installiert alle verfügbaren Qt-, KDE- und OGRE-Erweiterungen (kann ohne das Useflag "editor" verwendet werden).</flag>
-		<flag name="encryption" lang="en">Enables encryption support for MPQ archives which requires Crypto++. Otherwise, only OpenSSL or something similar is required for an MD5 function.</flag>
 		<flag name="debug" lang="en">Builds library in debug mode.</flag>
 		<flag name="doc" lang="en">Installs Doxygen-generated API documentation as well.</flag>
 		<flag name="doc" lang="de">Installiert zusätzlich eine Doxygen-generierte API-Dokumentation.</flag>
