@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
 IUSE="+app +blp +jass jass_llvm +map +mdlx +mpq +w3g +editor +plugins debug doc"
 
-EGIT_REPO_URI="git://gitorious.org/wc3lib/wc3lib.git"
+EGIT_REPO_URI="git://wc3lib.org/wc3lib.git"
 EGIT_BRANCH="master"
 
 DEPEND="${RDEPEND}"
