@@ -33,7 +33,7 @@ dev-lang/tcl
 dev-libs/boost
 app-text/pandoc
 python? (
-dev-lang/python:2
+dev-lang/python:2.7
 )
 lua? (
 dev-lang/lua
