@@ -24,6 +24,7 @@ dev-lang/python:2.7
 )
 lua? (
 dev-lang/lua
+dev-cpp/luabind
 )
 "
 MERGE_TYPE="source"
