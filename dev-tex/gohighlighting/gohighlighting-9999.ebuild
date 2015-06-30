@@ -17,6 +17,6 @@ EHG_REPO_URI="https://bitbucket.org/korfuri/golang-latex-listings"
 
 src_install()
 {
-	dodir /usr/share/texmf-dist/tex/latex/listings/
-	cp -R "${S}/" "${D}/" || die "Install failed!"
+	insinto /usr/share/texmf-dist/tex/latex/listings/
+	doins "${EHG_CHECKOUT_DIR}/lstlang0.sty"
 }
