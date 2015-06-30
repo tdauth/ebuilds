@@ -18,5 +18,8 @@ EHG_REPO_URI="https://bitbucket.org/korfuri/golang-latex-listings"
 src_install()
 {
 	insinto /usr/share/texmf-dist/tex/latex/listings/
-	doins "${EHG_CHECKOUT_DIR}/lstlang0.sty"
+	echo "Checkout dir 0: ${EGIT_CHECKOUT_DIR}"
+	echo "Checkout dir 1: ${EHG_CHECKOUT_DIR}"
+	echo "Source dir: ${S}"
+	doins "${EGIT_CHECKOUT_DIR}/lstlang0.sty"
 }
