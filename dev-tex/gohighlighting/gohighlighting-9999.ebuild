@@ -4,10 +4,7 @@
 
 EAPI="4"
 
-inherit git-2
-
-
-hg clone https://bitbucket.org/korfuri/golang-latex-listings
+inherit mercurial
 
 DESCRIPTION="LaTeX Go Highlighting"
 HOMEPAGE="http://go-lang.cat-v.org/text-editors/"
@@ -16,8 +13,7 @@ RESTRICT="nomirror"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
 
-EGIT_REPO_URI="https://bitbucket.org/korfuri/golang-latex-listings"
-EGIT_BRANCH="master"
+EHG_REPO_URI="https://bitbucket.org/korfuri/golang-latex-listings"
 
 src_install()
 {
