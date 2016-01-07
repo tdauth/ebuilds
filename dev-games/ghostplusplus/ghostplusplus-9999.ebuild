@@ -11,7 +11,6 @@ HOMEPAGE="http://code.google.com/p/ghostplusplus/"
 LICENSE="APL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
-IUSE=""
 
 ESVN_REPO_URI="http://ghostplusplus.googlecode.com/svn/trunk/"
 
