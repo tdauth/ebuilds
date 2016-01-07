@@ -11,7 +11,7 @@ HOMEPAGE="http://code.google.com/p/ghostplusplus/"
 LICENSE="APL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
-IUSE="+app +blp +jass jass_llvm +map +mdlx +mpq +w3g +editor +plugins debug doc"
+IUSE=""
 
 ESVN_REPO_URI="http://ghostplusplus.googlecode.com/svn/trunk/"
 
@@ -25,17 +25,17 @@ MERGE_TYPE="source"
 # https://www.ghostpp.com/forum/index.php?topic=346.0
 # https://github.com/OHSystem/ohsystem/wiki/Installation---UNIX
 src_install() {
-	cd "${WORKDIR}/bncsutil/src/bncsutil/"
+	cd "${WORKDIR}/${P}/bncsutil/src/bncsutil/"
 	emake
 	emake install
 
 	# go back
-	cd "${WORKDIR}/StormLib/stormlib"
+	cd "${WORKDIR}/${P}/StormLib/stormlib"
 	emake
 	emake install
 
 	# todo replace stuff
-	cd "${WORKDIR}/ghost/"
+	cd "${WORKDIR}/${P}/ghost/"
 	emake
 	emake install
 }
