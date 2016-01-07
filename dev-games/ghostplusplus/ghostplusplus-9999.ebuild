@@ -4,7 +4,7 @@
 
 EAPI="4"
 
-inherit subversion
+inherit git-2
 
 DESCRIPTION="GHost++ is a Warcraft 3 game hosting bot."
 HOMEPAGE="http://code.google.com/p/ghostplusplus/"
@@ -12,7 +12,8 @@ LICENSE="APL-2"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
 
-ESVN_REPO_URI="http://ghostplusplus.googlecode.com/svn/trunk/"
+EGIT_REPO_URI="git://wc3lib.org/ghostplusplus.git"
+EGIT_BRANCH="master"
 
 DEPEND="${RDEPEND}"
 RDEPEND="
