@@ -25,16 +25,16 @@ MERGE_TYPE="source"
 # https://github.com/OHSystem/ohsystem/wiki/Installation---UNIX
 src_install() {
 	cd "${WORKDIR}/${P}/bncsutil/src/bncsutil/"
-	emake
-	emake install
+	emake DESTDIR=${D}
+	emake DESTDIR=${D} install
 
 	# go back
 	cd "${WORKDIR}/${P}/StormLib/stormlib"
-	emake
-	emake install
+	emake DESTDIR=${D}
+	emake DESTDIR=${D} install
 
 	# todo replace stuff
 	cd "${WORKDIR}/${P}/ghost/"
-	emake
-	emake install
+	emake DESTDIR=${D}
+	emake DESTDIR=${D} install
 }
