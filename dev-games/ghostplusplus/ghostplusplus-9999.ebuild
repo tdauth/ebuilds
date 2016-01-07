@@ -37,5 +37,5 @@ src_install() {
 	# todo replace stuff
 	cd "${WORKDIR}/${P}/ghost/"
 	emake DESTDIR=${D}
-	emake DESTDIR=${D} install
+	#emake DESTDIR=${D} install
 }
